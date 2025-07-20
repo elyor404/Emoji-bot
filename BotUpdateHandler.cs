@@ -68,7 +68,6 @@ class BotUpdateHandler(ILogger<BotUpdateHandler> logger) : IUpdateHandler
                 }
                 else if (!patterns.Contains(emoji) && seed is not null)
                 {
-                    // "Noma’lum buyruq. Quyidagilardan birini ishlating: /fun-emoji, /bottts, /avataaars, /pixel-art"
                     await botClient.SendMessage(
                         chatId: update.Message.Chat.Id,
                         text: "Noma'lum buyruq. Quyidagilardan birini ishlating: /fun-emoji, /bottts, /avataaars, /pixel-art",
@@ -77,16 +76,14 @@ class BotUpdateHandler(ILogger<BotUpdateHandler> logger) : IUpdateHandler
                 }
                 else if (patterns.Contains(emoji) && seed is null)
                 {
-                    //"Iltimos, buyruqdan keyin (seed) kiriting. Misol: /fun-emoji Ali"
                     await botClient.SendMessage(
                         chatId: update.Message.Chat.Id,
-                        text: "Iltimos, buyruqdan keyin (seed) kiriting. Misol: /fun-emoji Ali",
+                        text: "Iltimos, buyruqdan keyin (seed) kiriting. Misol: /fun-emoji Elyor",
                         parseMode: Telegram.Bot.Types.Enums.ParseMode.Markdown,
                         cancellationToken: cancellationToken);
                 }
                 else
                 {
-                    // "Iltimos, avatar olish uchun buyruqdan foydalaning."
                     await botClient.SendMessage(
                     chatId: update.Message.Chat.Id,
                     text: "Iltimos, avatar olish uchun to'g'ri buyruqdan foydalaning.",

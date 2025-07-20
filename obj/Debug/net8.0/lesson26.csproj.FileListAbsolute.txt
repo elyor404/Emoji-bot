@@ -50,3 +50,4 @@ C:\Users\Elyorbek_Khatanboyev\Development\Web applications\lesson26\obj\Debug\ne
 C:\Users\Elyorbek_Khatanboyev\Development\Web applications\lesson26\obj\Debug\net8.0\lesson26.pdb
 C:\Users\Elyorbek_Khatanboyev\Development\Web applications\lesson26\obj\Debug\net8.0\lesson26.genruntimeconfig.cache
 C:\Users\Elyorbek_Khatanboyev\Development\Web applications\lesson26\obj\Debug\net8.0\ref\lesson26.dll
+C:\Users\Elyorbek_Khatanboyev\Development\Web applications\lesson26\obj\Debug\net8.0\lesson26.sourcelink.json
